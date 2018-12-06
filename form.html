@@ -1,0 +1,39 @@
+<!DOCTYPE <!DOCTYPE html>
+<html >
+<head>
+    <meta charset="utf-8" />
+    <title>formulaire</title>
+    <link rel="stylesheet"  media="screen" href="form.css" />
+  
+</head>
+<body >
+        <h1 style="text-align: center;color: blanchedalmond" >  FORMULAIRE D'INSCRIPTION </h1>           
+      <div > <form name="F1" action ='#' onsubmit="validform()" required >  
+              
+            <p>Nom: <br><input type="text"  id="Name" placeholder="votre Nom.." > </p>       
+            <p> Addresse:<br> <select type="text" value="" name="Adress"> 
+                    <option>Tunisia</option> 
+                    <option>France</option> 
+                    <option>Marroc</option> 
+                    <option>Egypt</option> 
+                </select></p>
+            <p>Addresse E-mail :<br> <input type="email"  id="EMail" placeholder="Email..">  </p>
+             <p>Mot De Pass:<br> <input type="password"  id="psw"  name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  required placeholder="votre mot de pass.." onclick="openForm()"> </p>  
+             <input type="checkbox" onclick="myFunction()">Show Password<br>
+             <div id="message">
+                <h3>Password must contain the following:</h3>
+                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                <p id="number" class="invalid">A <b>number</b></p>
+                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+              </div>
+             <p>Commentaire: <br> <textarea cols="55" id="Comen" placeholder="votre commentaire
+                ..">  </textarea></p> 
+            <p><input type="submit" value="send"  >      
+                <input type="reset" value="Reset" id="Reset" onchange="resetcontent()">   
+            </p>          
+        </form> 
+    </div> 
+    <script src="main.js"></script>
+</body>
+</html>
